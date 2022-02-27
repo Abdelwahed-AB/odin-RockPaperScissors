@@ -65,11 +65,11 @@ function playRound(playerSelection, computerSelection){
 
     scoreElem.textContent = `Player ${playerScore}:${computerScore} Computer`;
     if(playerScore === 5 && computerScore < 5){
-        resultElem.textContent = `Player Wins!`;
+        resultElem.textContent = `Player Wins! Press a button to play again!`;
         playerScore = 0;
         computerScore = 0;
     }else if(computerScore === 5 && playerScore < 5){
-        resultElem.textContent = `Computer Wins!`;
+        resultElem.textContent = `Computer Wins! Press a button to play again!`;
         playerScore = 0;
         computerScore = 0;
     }
